@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-docker build -t sb2nov/latex .
-docker run --rm -i -v "$PWD":/data sb2nov/latex pdflatex sourabh_bajaj_resume.tex
+docker build -t pdflatex-image .
+docker run --rm -i -v "$PWD":/local xelatex-image pdflatex ethan_perry.tex
